@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border-collapse: collapse;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 50.5%;
+}
+
+html, body{
+    width: 100%;
+}
+
+body{
+    font-size: 1.5rem;
+}
+
+:root{
+    --cor-branco: #fff;
+    --cor-cinza: #f9fafc;
+    --cor-cinza-escuro: #91969e;
+    --cor-cinza-fundo: #c7c7c7;
+    --cor-preto: black;
+    --cor-rosa: #ff0ef0;
+    --cor-azul: #3f51b5;
+    --cor-laranja: orange;
+    --cor-amarelo: yellow;
+    --fonte-principal: 'Montserrat', sans-serif;
+}
+
+/* Cabeçalho - Início */
+
+.cabecalho{
+    width: 100%;
+    padding: 1rem 0;
+    background: var(--cor-cinza-fundo);
+}
+
+.cabecalho>div{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cabecalho>div>div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cabecalho img{
+    width: 10rem;
+}
+
+.cabecalho h1{
+    font-size: 3.5rem;
+    text-align: center;
+    width: 60%;
+    color: var(--cor-branco);
+    margin: 0 auto;
+    font-family: var(--fonte-principal);
+}
+
+.cabecalho p{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--cor-branco);
+    font-weight: bold;
+    font-family: var(--fonte-principal);
+}
+
+.cabecalho h1:nth-of-type(2){
+    color: var(--cor-amarelo);
+    font-size: 4.5rem;
+}
+
+.cabecalho span{
+    background: var(--cor-azul);
+    color: var(--cor-branco);
+    padding: 1rem;
+}
+
+/* Cabeçalho - Fim */
+
+/* Container Vídeo - Início */
+
+.container-video{
+    width: 100%;
+    padding: 3rem 0;
+    background: var(--cor-cinza-fundo);
+}
+
+.container-video>div{
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* Container Vídeo - Fim */
+
+/* Container Botão Compra - Início */
+
+.botao-compra{
+    width: 100%;
+    padding: 3rem 0;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 6rem;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    font-family: var(--fonte-principal);
+}
+
+div.botao-compra-desocultar{
+    display: block;
+}
+
+.botao-compra h1{
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: var(--fonte-principal);
+}
+
+.botao-compra h1{
+    font-size: 3.5rem;
+}
+
+.botao-compra span{
+    border-radius: 1rem;
+    color: var(--cor-preto);
+    padding: 0.8rem;
+    background: var(--cor-amarelo);
+}
+
+.botao-compra h1 ~ div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.botao-compra a{
+    text-align: center;
+    background: var(--cor-laranja);
+    padding: 1.5rem;
+    color: var(--cor-branco);
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: var(--fonte-principal);
+    border-radius: 1rem;
+    transition: all 0.2s;
+    animation: animacao-sombra 1s infinite alternate-reverse;
+}
+
+@keyframes animacao-sombra{
+    0%{
+        box-shadow: 0.2rem 0.2rem 2rem var(--cor-laranja);
+    }
+    50%{
+        box-shadow: 0.2rem 0.2rem 4rem rgba(255, 165, 0, 0.5);
+        transform: scale(1.05);
+    }
+    100%{
+        box-shadow: 0.2rem 0.2rem 6rem rgba(255, 255, 255, 0);
+        transform: scale(1.1);
+    }
+}
+
+/* Container Botão Compra - Fim */
+
+/* Container Comentários - Início */
+
+.container-comentarios{
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.container-comentarios>div{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.container-comentarios h2, .container-comentarios p{
+    font-family: var(--fonte-principal);
+}
+
+.comentarios{
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 7rem;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.comentarios h1{
+    width: 100%;
+    font-family: var(--fonte-principal);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.comentario{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--fonte-principal);
+    background: var(--cor-cinza);
+    border-radius: 1rem;
+    width: 100%;
+    position: relative;
+    /* height: 15rem; */
+}
+
+.comentario h3{
+    font-size: 2.5rem;
+    color: var(--cor-azul);
+}
+
+.comentario p{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.comentario img{
+    width: 7rem;
+}
+
+.interacoes{
+    position: absolute;
+    bottom: -3rem;
+    z-index: 10000;
+    right: 0;
+    background: var(--cor-cinza);
+    box-shadow: 0.2rem 0.2rem 2rem var(--cor-cinza-escuro);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.interacoes img{
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.interacoes img.opacidade{
+    opacity: 0.5;
+}
+
+.interacoes img:hover{
+    transform: scale(1.05);
+}
+
+.comentario span{
+    height: 5rem;
+    width: 0.3rem;
+    border-radius: 1rem;
+    background: var(--cor-cinza-escuro);
+    display: inline-block;
+    position: absolute;
+    top: 0.5rem;
+    left: -2rem
+}
+
+div.interacoes img{
+    width: 3rem;
+}
+
+div.resposta{
+    width: 90%;
+}
+
+.curtir-responder{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    position: absolute;
+    bottom: -4rem;
+    left: 0rem;
+    box-shadow: 0.2rem 0.2rem 2rem var(--cor-cinza-escuro);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.curtir-responder p{
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.curtir-responder p.cinza{
+    color: #acacac;
+}
+
+.curtir-responder p:hover{
+    text-decoration: underline;
+}
+
+/* Container Comentários - Fim */
+
+/* Container Rodape - Fim */
+
+.rodape{
+    width: 100%;
+    background: var(--cor-preto);
+    padding: 2rem 0;
+    color: var(--cor-branco);
+    font-family: var(--fonte-principal);
+}
+
+.rodape>div{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.rodape p{
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Container Rodape - Fim */
+
+@media (max-width: 850px){
+    .container-video>div{
+        width: 98%;
+    }
+
+    .cabecalho h1{
+        width: 100%;
+        font-size: 4.5rem;
+    }
+
+    .cabecalho p{
+        font-size: 4rem;
+    }
+
+    .botao-compra a{
+        width: 90%;
+    }
+}
+
+@media (max-width: 530px){
+    html{
+        font-size: 45%;
+    }
+
+    .botao-compra a{
+        font-size: 3rem;
+    }
+    
+}
+
+@media (max-width: 430px){
+    html{
+        font-size: 25%;
+    }
+}
