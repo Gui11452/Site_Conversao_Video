@@ -53,7 +53,7 @@ divVideo.addEventListener('mouseover', e => {
     setTimeout(function(){
         div1.classList.add('botao-compra-desocultar');
         div2.classList.add('botao-compra-desocultar');
-    }, 430000)
+    }, 12000)//430000)
 });
 
 
